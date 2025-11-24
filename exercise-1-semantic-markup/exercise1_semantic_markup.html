@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+      META + TITLE: Sets page encoding, makes mobile friendly and sets page title shown in browser tab
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking with Andy!</title>
+
+    <!-- Link external stylesheet -->
+    <link rel="stylesheet" href="exercise1_semantic_markup.css">
+</head>
+
+<body>
+
+    <!-- HEADER SECTION : Contains page title and navigation links -->
+    <header class="header">
+        <h1>Cooking with Andy!</h1>
+
+        <!-- Navigation links styled to be blue and underlined -->
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Browse</a>
+        </nav>
+    </header>
+
+
+    <!-- MAIN CONTENT SECTION: Contains recipe title, description, ingredients, and instructions -->
+    <main class="content">
+
+        <!-- Recipe Title -->
+        <h2>Chocolate Chip Cookies</h2>
+
+        <p>Delicious homemade cookies with gooey chocolate chips!</p>
+
+        <!-- INGREDIENTS SECTION-->
+        <section>
+            <h2>Ingredients</h2>
+
+            <ul>
+                <li>2 1/4 cups flour</li>
+                <li>1/2 teaspoon baking soda</li>
+                <li>1 cup unsalted butter, softened</li>
+                <li>1/2 cup granulated sugar</li>
+                <li>1 cup packed brown sugar</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>2 large eggs</li>
+                <li>2 cups semisweet chocolate chips</li>
+            </ul>
+
+            <!-- Grey aside box exactly like screenshot -->
+            <aside class="tip-box">
+                <p>
+                    If you don't have eggs, you can use a suitable egg substitute like applesauce,
+                    mashed bananas, or yogurt. Use 1/4 cup of the substitute for each egg in the recipe.
+                </p>
+            </aside>
+        </section>
+
+        <!-- INSTRUCTIONS SECTION :Ordered list because steps must be followed in order -->
+        <section>
+            <h2>Instructions</h2>
+
+            <ol>
+                <li>Preheat your oven to 190°C.</li>
+                <li>In a small bowl, mix the flour and baking soda. Set aside.</li>
+                <li>
+                    In a large mixing bowl, cream together the softened butter, granulated sugar,
+                    brown sugar, and vanilla extract until smooth.
+                </li>
+                <li>Add the eggs one at a time, beating well after each addition.</li>
+                <li>Gradually add the flour mixture to the wet ingredients, mixing until well combined.</li>
+                <li>Stir in the chocolate chips.</li>
+                <li>Drop rounded tablespoons of dough onto ungreased baking sheets.</li>
+                <li>Bake in the oven for 8-10 minutes or until the edges are golden brown.</li>
+                <li>
+                    Allow the cookies to cool on the baking sheets for a few minutes before 
+                    transferring them to wire racks to cool completely.
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- THIS IS FOOTER SECTION -->
+    <footer class="footer">
+        <p>Cooking With Andy © 2024</p>
+    </footer>
+
+</body>
+</html>

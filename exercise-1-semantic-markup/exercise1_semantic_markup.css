@@ -1,0 +1,98 @@
+/* 
+==========================================
+GLOBAL PAGE STYLING
+==========================================
+*/
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+}
+
+.content {
+    padding: 16px;
+}
+
+
+
+/* 
+==========================================
+HEADER STYLING
+Grey background bar + spacing
+==========================================
+*/
+
+.header {
+    background-color: #d3d3d3;
+    padding: 20px 15px 10px 15px;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+}
+
+
+
+/* 
+==========================================
+NAVIGATION LINKS
+Blue & underlined exactly like screenshot
+==========================================
+*/
+
+.nav a {
+    color: blue;
+    text-decoration: underline;
+    margin-right: 12px;
+}
+
+
+
+/* 
+==========================================
+RECIPE SECTIONS
+==========================================
+*/
+
+h2 {
+    margin-top: 28px;
+}
+
+ul {
+    margin-top: 8px;
+}
+
+
+
+/* 
+==========================================
+TIP BOX (grey background)
+Matches screenshot exactly
+==========================================
+*/
+
+.tip-box {
+    background-color: #d3d3d3;
+    padding: 12px;
+    margin-top: 18px;
+}
+
+
+
+/* 
+==========================================
+FOOTER
+Grey bar at bottom
+==========================================
+*/
+
+.footer {
+    background-color: #d3d3d3;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+}
