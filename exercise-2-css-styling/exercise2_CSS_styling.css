@@ -1,0 +1,85 @@
+/* GLOBAL SETTINGS */
+
+/* Make box sizing predictable */
+* {
+  box-sizing: border-box;
+}
+
+/* Grey background & base text */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cfcfcf;       /* page grey */
+  line-height: 1.5;
+}
+
+/* WHITE CARD CONTAINER */
+
+.card {
+  max-width: 760px;                /* similar width to screenshot */
+  margin: 18px auto 36px;          /* center on page */
+  padding: 46px 56px 52px;
+  background-color: #ffffff;       /* white card */
+  border-radius: 32px;             /* big rounded corners */
+}
+
+/* HERO HEADINGS */
+
+.hero h1 {
+  margin: 0 0 4px;
+  text-align: center;
+  font-size: 84px;                 /* big “Our Story” */
+  font-family: "Impact", "Arial Black", sans-serif;
+  color: #35a000;                  /* bright green */
+  line-height: 1;
+}
+
+.hero h2 {
+  margin: 0 0 32px;
+  text-align: center;
+  font-size: 46px;
+  font-family: "Impact", "Arial Black", sans-serif;
+  color: #35a000;
+}
+
+/* SECTION TEXT */
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 46px;
+  font-family: "Impact", "Arial Black", sans-serif;
+  color: #35a000;
+}
+
+.section p {
+  margin: 0 0 14px;
+  font-size: 15px;
+  color: #000000;
+}
+
+/* GREEN "DID YOU KNOW?" BOX */
+
+.fact-box {
+  background-color: #35a000;
+  border-radius: 26px;
+  padding: 22px 28px;
+  margin: 0 38px 50px;             /* inset from sides & extra bottom space */
+}
+
+.fact-box h3 {
+  margin: 0 0 10px;
+  font-size: 38px;
+  font-family: "Impact", "Arial Black", sans-serif;
+  color: #ffffff;
+}
+
+.fact-box p {
+  margin: 0;
+  font-size: 15px;
+  color: #ffffff;
+}
