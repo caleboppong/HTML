@@ -1,0 +1,166 @@
+/* ===========================
+   GLOBAL BASE STYLES
+   =========================== */
+
+/* Better box-sizing for layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  /* Softer pink than the original but still on-theme,
+     with good contrast for dark text */
+  background-color: #ff9ad0;
+  color: #111;
+}
+
+/* Keep the default focus outline (important for accessibility) */
+:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+/* ===========================
+   SKIP LINK
+   =========================== */
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
+.page-header {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+/* Decorative divider at the very top */
+.divider {
+  max-width: 280px;
+  width: 60%;
+}
+
+/* Title + cart laid out horizontally on wide screens,
+   stacking on narrow screens */
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem auto 1rem;
+  max-width: 900px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Cart link stays accessible as a normal <a> element */
+.cart-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon {
+  width: 40px;
+  height: auto;
+}
+
+/* ===========================
+   MAIN CONTENT
+   =========================== */
+
+#main-content {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+/* Photo gallery: stacked cards */
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Each photo card */
+.photo-card {
+  margin: 0;
+  background-color: #ffeefc;  /* pale background for readability */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Make images responsive */
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Caption + button area */
+.photo-card figcaption {
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+/* Make the text stand out clearly */
+.photo-card p {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+/* Add to basket button */
+.basket-button {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  border: 2px solid #0077aa;
+  background-color: #0099dd;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* High-contrast hover/focus styles, but keep outline for keyboard users */
+.basket-button:hover {
+  background-color: #006caa;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+.page-footer {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  padding: 1rem 0.5rem;
+}
+
+.footer-nav {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+
+.footer-nav a {
+  color: #0000ee;              /* standard link blue for recognisability */
+  text-decoration: underline;
+}

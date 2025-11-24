@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Set Exercise 4 – Accessible Travel Photography Page
+    This page shows a small gallery where users can add
+    prints to a basket and then go to checkout.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wondering Photographer – Prints for Sale</title>
+
+  <link rel="stylesheet" href="exercise4_web_accessibility.css">
+</head>
+<body>
+  <!-- Skip link so keyboard and screen-reader users
+       can jump straight to the main content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <!-- Decorative divider: empty alt so screen readers ignore it -->
+    <img src="CO_TheDivider.png" alt="" class="divider" role="presentation">
+
+    <div class="header-bar">
+      <h1 class="site-title">The Wondering Photographer</h1>
+
+      <!-- Shopping cart link to checkout page -->
+      <a href="checkout.html"
+         class="cart-link"
+         aria-label="View basket and go to checkout">
+        <img src="CO_shopping.svg" alt="" class="cart-icon">
+      </a>
+    </div>
+  </header>
+
+  <!-- ===========================
+       MAIN CONTENT
+       =========================== -->
+  <main id="main-content">
+    <!--Each photo is a <figure> with an <img>,
+      a descriptive <figcaption>, and a button.
+      This makes the image + text act as one unit
+      for both sighted and screen-reader users.
+    -->
+    <section class="photo-gallery" aria-label="Travel photo prints for sale">
+      <!-- 1: Ocean -->
+      <figure class="photo-card">
+        <img src="CO_OceanPhoto.jpg"
+             alt="People sitting on bright white cliffs looking out over a calm blue ocean at sunset.">
+        <figcaption>
+          <p>
+            This was from a fabulous trip to the coast of Greenland with my family.
+            The water was lovely – but very cold!
+          </p>
+          <button type="button" class="basket-button">
+            Add to basket
+          </button>
+        </figcaption>
+      </figure>
+
+      <!-- 2: Golden Gate Bridge -->
+      <figure class="photo-card">
+        <img src="CO_BridgePhoto.jpg"
+             alt="Looking up at the orange towers and cables of the Golden Gate Bridge against a blue sky.">
+        <figcaption>
+          <p>
+            A picture of the Golden Gate Bridge in San Francisco, USA.
+          </p>
+          <button type="button" class="basket-button">
+            Add to basket
+          </button>
+        </figcaption>
+      </figure>
+
+      <!-- 3: Valley in Greenland -->
+      <figure class="photo-card">
+        <img src="CO_ValleyPhoto.jpg"
+             alt="A deep blue river winding through a rocky valley surrounded by mountains.">
+        <figcaption>
+          <p>
+            Another great photo from Greenland. It's a river valley where a glacier used to be.
+          </p>
+          <button type="button" class="basket-button">
+            Add to basket
+          </button>
+        </figcaption>
+      </figure>
+
+      <!-- 4: Waterfall -->
+      <figure class="photo-card">
+        <img src="CO_WaterfallPhoto.jpg"
+             alt="A tall waterfall pouring into a pool surrounded by bright green moss.">
+        <figcaption>
+          <p>
+            The waterfall made such a lovely sound. I could have fallen asleep!
+          </p>
+          <button type="button" class="basket-button">
+            Add to basket
+          </button>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <p><strong>Copyright The Wondering Photographer 2018.</strong></p>
+
+    <!-- Simple navigation list -->
+    <nav aria-label="Site navigation">
+      <ul class="footer-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About me</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
