@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Georgia, serif;
+  background-color: #d3d3d3;   /* light grey background like screenshot */
+  line-height: 1.5;
+}
+
+/* Constrain main content width and center it */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER & NAV */
+
+.page-header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Big title at the top */
+.page-header h1 {
+  margin: 0 0 10px;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+/* Simple horizontal nav under the title */
+.main-nav a {
+  margin: 0 20px;
+  color: blue;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+/* INTRO SECTION (TEXT + COW IMAGE) */
+
+/* Flexbox used to place text and image side by side */
+.intro {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px 30px;
+}
+
+/* Text takes more space than the image */
+.intro-text {
+  flex: 2;
+  font-size: 16px;
+}
+
+/* Cow image column */
+.intro-image {
+  flex: 1;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Cow image: fixed size, border & subtle shadow like screenshot */
+.intro-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border: 1px solid #bbb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   MEDIA GALLERY
+   ========================================= */
+
+.media-gallery {
+  margin-top: 20px;
+}
+
+/* Each row of the gallery uses Flexbox */
+.gallery-row {
+  display: flex;
+}
+
+/* Base gallery item: fills available width, no gaps between items */
+.gallery-item {
+  flex: 1;
+}
+
+/* Top row: make video a bit wider than the image */
+.gallery-item-wide {
+  flex: 2;
+}
+
+/* Images & video should all be the same height; width fills their cell */
+.gallery-item img,
+.gallery-item video {
+  display: block;       /* removes inline-block whitespace gaps */
+  width: 100%;
+  height: 260px;        /* uniform height for all media */
+  object-fit: cover;    /* allow cropping to keep aspect ratio */
+  margin: 0;            /* no gaps between items */
+  padding: 0;
+  border: none;
+}
+
+/* Optional: remove default focus outline from video for cleaner look
+   (screen-reader users can still use keyboard controls) */
+.gallery-item video:focus {
+  outline: none;
+}

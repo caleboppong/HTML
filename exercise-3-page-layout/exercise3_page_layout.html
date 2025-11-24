@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Set Exercise 3: Page Layout
+    This file builds the "J's Gallery" page and links to an external CSS file.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J's Gallery</title>
+
+  <!-- Link to the stylesheet for layout and styling -->
+  <link rel="stylesheet" href="exercise3_page_layout.css">
+</head>
+<body> <!--PAGE HEADER + NAVIGATION -->
+  <header class="page-header">
+    <h1>J's Gallery</h1>
+
+    <!-- Simple navigation bar -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Intro section with text and cow image side-by-side -->
+    <section class="intro">
+      <!-- Text column (content from content.md) -->
+      <article class="intro-text">
+        <p>
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent mollis adipiscing
+          per id libero libero. Tempus pretium netus molestie scelerisque facilisis tristique
+          volutpat ultricies. Nostra ligula ac pulvinar rutrum non rhoncus mauris facilisi.
+          Quisque maximus commodo sollicitudin, montes congue imperdiet. Est malesuada vivamus
+          vestibulum ante aenean class. Per integer aptent ullamcorper sagittis posuere
+          dignissim morbi scelerisque. Fringilla primis sagittis lorem erat integer; vulputate
+          nullam. Porta purus habitant id fermentum nec ex, proin mauris sem.
+        </p>
+
+        <p>
+          Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti. Non torquent amet
+          nibh elit ante fermentum praesent cras. Et suspendisse egestas eros erat aptent
+          sollicitudin. Nulla tortor purus posuere auctor himenaeos malesuada. Turpis phasellus
+          enim venenatis aliquam pellentesque senectus, id ultrices. Praesent tellus consequat
+          phasellus cubilia mattis mauris natoque litora. Fringilla cursus montes inceptos nec
+          venenatis platea.
+        </p>
+      </article>
+
+      <!-- Cow image column -->
+      <figure class="intro-image">
+        <!-- Use the provided cow image file name -->
+        <img src="CO_COW.jpg" alt="Highland cow standing on a beach">
+      </figure>
+    </section>
+  </main>
+
+  <!-- MEDIA GALLERY -->
+  <section class="media-gallery" aria-label="Photo and video gallery">
+    <!-- Top row: video + one image, side by side -->
+    <div class="gallery-row">
+      <div class="gallery-item gallery-item-wide">
+        <!-- Video with controls so user can play/pause -->
+        <video src="CO_video.mp4" controls></video>
+      </div>
+
+      <div class="gallery-item">
+        <img src="CO_img4598.jpg" alt="Foggy train station at night">
+      </div>
+    </div>
+
+    <!-- Bottom row: four images in a row -->
+    <div class="gallery-row">
+      <div class="gallery-item">
+        <img src="CO_img4532.jpg" alt="Yellow autumn leaves">
+      </div>
+      <div class="gallery-item">
+        <img src="CO_photo_2018_02_01.jpg" alt="Snowy mountains behind trees">
+      </div>
+      <div class="gallery-item">
+        <img src="CO_photo_2018_02_31.jpg" alt="Rolling hills landscape">
+      </div>
+      <div class="gallery-item">
+        <img src="CO_johns car jpg.jpg" alt="Snow-covered classic car in front of a building">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
